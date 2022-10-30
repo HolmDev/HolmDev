@@ -1,17 +1,133 @@
-<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 800 700" width="800" height="700" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
 			<style>
-			@font-face {
-				font-family: FiraCodeNF;
-				src: url("FiraCodeNF.ttf");
-			}
+:root {
+		--color0: #1d2021;
+		--color1: #fb4934;
+		--color2: #b8bb26;
+		--color3: #fabd2f;
+		--color4: #83a598;
+		--color5: #d3869b;
+		--color6: #8ec07c;
+		--color7: #d5c4a1;
+		--color8: #665c54;
+		--color9: #fb4934;
+		--color10: #b8bb26;
+		--color11: #fabd2f;
+		--color12: #83a598;
+		--color13: #d3869b;
+		--color14: #8ec07c;
+		--color15: #fbf1c7;
+}
 
-			h1, p {
-					font-family: FiraCodeNF;
-			}
+main {
+		padding: 10px;
+		background-color: #1d2021;
+}
+
+b,
+h1,
+h2,
+p {
+		margin: 0;
+		color: #d5c4a1;
+		font-family: Courier New;
+}
+
+h2 {
+		color: var(--color5);
+}
+
+ul {
+		list-style-type: square;
+		margin-bottom: 0;
+}
+li:nth-child(odd) {
+		color: var(--color2);
+}
+li:nth-child(even) {
+		color: var(--color3);
+}
+
+a {
+		color: inherit;
+}
+@keyframes rainbowShift {
+		0% {
+				background-position: 0;
+		}
+		100% {
+				background-position: 800px;
+		}
+}
+
+.rainbow {
+		background-color: var(--color4);
+		background-image: linear-gradient(-45deg, var(--color1), var(--color2), var(--color3), var(--color4), var(--color5), var(--color6), var(--color1));
+		background-size: 800px;
+		background-repeat: repeat;
+
+		animation: rainbowShift 1s linear infinite;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-moz-text-fill-color: transparent;
+
+		display: inline;
+}
+
+.shell {
+		margin-top: 10px;
+}
+
+.shell::before {
+		content: "[holmdev@github]$ ";
+		font-weight: bold;
+}
 			</style>
-			<h1>Whatsup I'm Fredholm</h1>
+			<main>
+			<p class="shell">cat intro.md</p>
+			<h1><p class="rainbow"># What's up! I'm Fredholm</p></h1>
+			<p>
+				Hello, my name is <p class="rainbow">Fredholm</p> and I'm a self taught programmer. I am currently a junior in high school who likes to spend his days in front of a computer.
+			</p>
+			<p class="shell">cat tech.md</p>
+			<h1><p class="rainbow"># Tech specs</p></h1>
+			<p>
+				<h2>## Main languages:</h2>
+				<ul>
+					<li>Python</li>
+					<li>JavaScript</li>
+					<li>C/C++</li>
+				</ul>
+				<br/>
+				<h2>## Setup</h2>
+				<ul>
+					<li>Arch Linux</li>
+					<li>Standalone WM (Usually dk/Qtile)</li>
+					<li>Emacs with evil keybinds</li>
+					<li>Fish</li>
+				</ul>
+				<br/>
+				<h2>## Projects</h2>
+				<ul>
+					<li>holmdev/holmdev.github.io (My tech blog)</li>
+					<li>holmdev/xrcat (Xresources Utility)</li>
+					<li>holmdev/dots (My personal dotfiles)</li>
+				</ul>
+			</p>
+			<p class="shell">cat contact.md</p>
+			<h1><p class="rainbow"># Contact</p></h1>
+			<p>
+				Feel free to contact me via:
+				<ul>
+				 <li><a href="mailto:fredholm.xyz@protonmail.com">[Mail](fredholm.xyz@protonmail)</a></li>
+				 <li><a href="https://github.com/HolmDev">[Github](@HolmDev)</a></li>
+				</ul>
+			<p class="shell">poweroff</p>
+			</p>
+			</main>
 		</div>
 	</foreignObject>
 </svg>
