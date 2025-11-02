@@ -90,31 +90,21 @@ a {
 			<p class="shell">cat intro.md</p>
 			<h1><p class="rainbow"># What's up! I'm Fredholm</p></h1>
 			<p>
-				Hello, my name is <p class="rainbow">Fredholm</p> and I'm a self taught programmer. I am currently a junior in high school who likes to spend his days in front of a computer.
+				Hello, my name is <p class="rainbow">Fredholm</p> and I'm a self taught programmer. I am currently studying computer science in college and working towards a master in cyber security.
 			</p>
-			<p class="shell">cat tech.md</p>
-			<h1><p class="rainbow"># Tech specs</p></h1>
+			<p class="shell">cat about.md</p>
+			<h1><p class="rainbow"># About</p></h1>
 			<p>
-				<h2>## Main languages:</h2>
+			        <h2><p class="rainbow">## My interests include (but are not limited to)</p></h2>
 				<ul>
-					<li>Python</li>
-					<li>JavaScript</li>
-					<li>C/C++</li>
-				</ul>
-				<br/>
-				<h2>## Setup</h2>
-				<ul>
-					<li>Arch Linux</li>
-					<li>Standalone WM (Usually dk/Qtile)</li>
-					<li>Emacs with evil keybinds</li>
-					<li>Fish</li>
-				</ul>
-				<br/>
-				<h2>## Projects</h2>
-				<ul>
-					<li>holmdev/holmdev.github.io (My tech blog)</li>
-					<li>holmdev/xrcat (Xresources Utility)</li>
-					<li>holmdev/dots (My personal dotfiles)</li>
+					<li>Homelabbing</li>
+					<li>Docker</li>
+					<li>NixOS (or anything else running Linux)</li>
+					<li>Decentralized networks</li>
+					<li>CTFs</li>
+					<li>Pentesting</li>
+					<li>Blueteaming</li>
+					<li>and lots of other more esoteric things...</li>
 				</ul>
 			</p>
 			<p class="shell">cat contact.md</p>
